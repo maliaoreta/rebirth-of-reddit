@@ -1,0 +1,27 @@
+{
+  "name": "SCSS-Gulp-Boilerplate",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "browser-sync start --server --files \"js/**/*.js\" --index test.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/maliaoreta/SCSS-Gulp-Boilerplate.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/maliaoreta/SCSS-Gulp-Boilerplate/issues"
+  },
+  "homepage": "https://github.com/maliaoreta/SCSS-Gulp-Boilerplate#readme",
+  "devDependencies": {
+    "browser-sync": "^2.11.2",
+    "chai": "^3.5.0",
+    "gulp": "^3.9.1",
+    "gulp-sass": "^2.2.0",
+    "mocha": "^2.4.5"
+  }
+}
