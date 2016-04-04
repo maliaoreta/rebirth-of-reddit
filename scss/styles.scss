@@ -1,7 +1,153 @@
 @import "partials/reset";
 
-$white: floralwhite;
+
 
 body {
-  background-color: $white;
+  background-color: #5E6379;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  text-align: center;
+  max-height: 100%;
+  max-width: 100%;
+}
+
+#inputContainer {
+  
+  margin: 7em;
+  height: 21em;
+  width: 50em;
+  background-color: lighten(#70718F, 10%);
+  border: 0.5em solid #70718F;
+  border-radius: 1em;
+
+  #snoo {
+
+    max-height: 13em;
+    margin: 2em;
+    margin-bottom: 0;
+  }
+
+
+  #chooseSub {
+    
+    color: #FFFFFF;
+    font-family: 'Alegreya Sans', sans-serif;
+    font-size: 1.5em;
+    // margin-top: em;
+  }
+
+  #formInfo {
+
+    margin: 0.7em;
+  
+    #subredditInput {
+
+      border: 1px solid lighten(gray, 40%);
+      border-radius: 0.2em;
+      padding: 0.5em;
+      background-color: lighten(gray, 45%);
+      margin: 0.1em;
+    }
+
+    #subredditInput:focus {
+
+      background-color: #FFFFFF;
+    }
+
+    #getSubredditButton {
+
+      background-color: lighten(#ABCDEF, 8%);
+      border: 1px solid #ABCDEF;
+      border-radius: 0.2em;
+      padding: 0.5em;
+      color: lighten(blue, 20%);
+      font-weight: bold;
+      margin-right: 0.1em;
+    }
+
+    #getSubredditButton:hover {
+
+      padding: 0.53em;
+    }
+  }
+}
+
+#displayContentDiv {
+
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+
+#posts {
+
+  flex: 0 1 70%;
+  background-color: #FFFFFF;
+  border: 0.01em solid floralwhite;
+  border-radius: 0.4em;
+  padding: 0.5em;
+  margin: 0.5em;
+  margin-bottom: 0;
+  text-align: center;
+}
+
+#srcLink {
+
+  text-decoration: none;
+}
+
+#srcLink:hover {
+
+  font-size: 1.02em;
+}
+
+#title {
+
+  flex: 0 1 100%;
+  margin: 0.5em;
+  text-decoration: none;
+}
+
+#image {
+
+  height: 20em;
+}
+
+#threadInfo {
+  
+  display: flex;
+  margin: 0.5em;
+}
+
+.threadIcons {
+
+  margin: 0.1em;
+  height: 1.2em;
+}
+
+.iconDetails {
+
+  margin: 0.3em;
+  color: #000000;
+}
+
+#author {
+
+  margin-top: 0.7em;
+  margin-left: 0.3em;
+  text-decoration: none;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 0.7em;
+  color: lighten(blue, 20%);
+}
+
+#author:hover {
+
+  font-size: 0.75em;
+}
+
+#author:visited {
+
+  color: purple;
 }

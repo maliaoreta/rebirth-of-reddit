@@ -46,4 +46,101 @@ table {
   border-spacing: 0; }
 
 body {
-  background-color: floralwhite; }
+  background-color: #5E6379;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  text-align: center;
+  max-height: 100%;
+  max-width: 100%; }
+
+#inputContainer {
+  margin: 7em;
+  height: 21em;
+  width: 50em;
+  background-color: #8d8da5;
+  border: 0.5em solid #70718F;
+  border-radius: 1em; }
+  #inputContainer #snoo {
+    max-height: 13em;
+    margin: 2em;
+    margin-bottom: 0; }
+  #inputContainer #chooseSub {
+    color: #FFFFFF;
+    font-family: 'Alegreya Sans', sans-serif;
+    font-size: 1.5em; }
+  #inputContainer #formInfo {
+    margin: 0.7em; }
+    #inputContainer #formInfo #subredditInput {
+      border: 1px solid #e6e6e6;
+      border-radius: 0.2em;
+      padding: 0.5em;
+      background-color: #f3f3f3;
+      margin: 0.1em; }
+    #inputContainer #formInfo #subredditInput:focus {
+      background-color: #FFFFFF; }
+    #inputContainer #formInfo #getSubredditButton {
+      background-color: #cde1f6;
+      border: 1px solid #ABCDEF;
+      border-radius: 0.2em;
+      padding: 0.5em;
+      color: #6666ff;
+      font-weight: bold;
+      margin-right: 0.1em; }
+    #inputContainer #formInfo #getSubredditButton:hover {
+      padding: 0.53em; }
+
+#displayContentDiv {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center; }
+
+#posts {
+  flex: 0 1 70%;
+  background-color: #FFFFFF;
+  border: 0.01em solid floralwhite;
+  border-radius: 0.4em;
+  padding: 0.5em;
+  margin: 0.5em;
+  margin-bottom: 0;
+  text-align: center; }
+
+#srcLink {
+  text-decoration: none; }
+
+#srcLink:hover {
+  font-size: 1.02em; }
+
+#title {
+  flex: 0 1 100%;
+  margin: 0.5em;
+  text-decoration: none; }
+
+#image {
+  height: 20em; }
+
+#threadInfo {
+  display: flex;
+  margin: 0.5em; }
+
+.threadIcons {
+  margin: 0.1em;
+  height: 1.2em; }
+
+.iconDetails {
+  margin: 0.3em;
+  color: #000000; }
+
+#author {
+  margin-top: 0.7em;
+  margin-left: 0.3em;
+  text-decoration: none;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 0.7em;
+  color: #6666ff; }
+
+#author:hover {
+  font-size: 0.75em; }
+
+#author:visited {
+  color: purple; }

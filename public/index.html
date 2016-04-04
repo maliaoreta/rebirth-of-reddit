@@ -4,15 +4,24 @@
   <meta charset="UTF-8">
   <title>Rebirth of Reddit</title>
   <link rel="stylesheet" href="/css/styles.css">
+  <link href='https://fonts.googleapis.com/css?family=Alegreya+Sans:700' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Courgette' rel='stylesheet' type='text/css'>
 </head>
 <body>
-  <div id="inputContainer">
-    
-    Choose a subreddit! <br>
-    <input type="text" id="subredditInput"></input>
 
-    <button id="getSubredditButton">Get Subreddit</button>
+  <div id="inputContainer">
+    <img id ="snoo" src="https://www.redditstatic.com/about/assets/reddit-alien.png">
+    <div id="formInfo">
+      <div id="chooseSub">Choose a subreddit!</div>
+      <form id ="inputForm">
+        <input type="text" id="subredditInput" onclick="feedInputClicked ()"></input>
+        <button id="getSubredditButton">Go!</button>
+      </form>
+    </div>
   </div>
+
+  <div id="displayContentDiv"></div>
 
   <script src="/js/client.js"></script>
 </body>
